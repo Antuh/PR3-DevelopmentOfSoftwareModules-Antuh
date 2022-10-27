@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище MetallurgiaModelContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Authorizations">
+      <EntityTypeMapping TypeName="MetallurgiaModel.Authorizations">
+        <MappingFragment StoreEntitySet="Authorizations">
+          <ScalarProperty Name="ID_Authorization" ColumnName="ID_Authorization" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Company">
+      <EntityTypeMapping TypeName="MetallurgiaModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="ID_Company" ColumnName="ID_Company" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contract">
+      <EntityTypeMapping TypeName="MetallurgiaModel.Contract">
+        <MappingFragment StoreEntitySet="Contract">
+          <ScalarProperty Name="ID_Contract" ColumnName="ID_Contract" />
+          <ScalarProperty Name="ID_TypesOfContracts" ColumnName="ID_TypesOfContracts" />
+          <ScalarProperty Name="ID_Company" ColumnName="ID_Company" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SignatureDate" ColumnName="SignatureDate" />
+          <ScalarProperty Name="GeneralQuantity" ColumnName="GeneralQuantity" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Export">
+      <EntityTypeMapping TypeName="MetallurgiaModel.Export">
+        <MappingFragment StoreEntitySet="Export">
+          <ScalarProperty Name="ID_ExportMinerals" ColumnName="ID_ExportMinerals" />
+          <ScalarProperty Name="ID_Minerals" ColumnName="ID_Minerals" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ID_Contract" ColumnName="ID_Contract" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExportMinerals">
+      <EntityTypeMapping TypeName="MetallurgiaModel.ExportMinerals">
+        <MappingFragment StoreEntitySet="ExportMinerals">
+          <ScalarProperty Name="ID_ExportMinerals" ColumnName="ID_ExportMinerals" />
+          <ScalarProperty Name="ID_Contracts" ColumnName="ID_Contracts" />
+          <ScalarProperty Name="ID_Minerals" ColumnName="ID_Minerals" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Minerals">
+      <EntityTypeMapping TypeName="MetallurgiaModel.Minerals">
+        <MappingFragment StoreEntitySet="Minerals">
+          <ScalarProperty Name="ID_Minerals" ColumnName="ID_Minerals" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Post">
+      <EntityTypeMapping TypeName="MetallurgiaModel.Post">
+        <MappingFragment StoreEntitySet="Post">
+          <ScalarProperty Name="ID_Post" ColumnName="ID_Post" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provider">
+      <EntityTypeMapping TypeName="MetallurgiaModel.Provider">
+        <MappingFragment StoreEntitySet="Provider">
+          <ScalarProperty Name="ID_Provider" ColumnName="ID_Provider" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Production" ColumnName="Production" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurschasedEquip">
+      <EntityTypeMapping TypeName="MetallurgiaModel.PurschasedEquip">
+        <MappingFragment StoreEntitySet="PurschasedEquip">
+          <ScalarProperty Name="ID_PurshasedEquip" ColumnName="ID_PurshasedEquip" />
+          <ScalarProperty Name="ID_Provider" ColumnName="ID_Provider" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="ID_Staff" ColumnName="ID_Staff" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Report">
+      <EntityTypeMapping TypeName="MetallurgiaModel.Report">
+        <MappingFragment StoreEntitySet="Report">
+          <ScalarProperty Name="ID_Report" ColumnName="ID_Report" />
+          <ScalarProperty Name="ID_Minerals" ColumnName="ID_Minerals" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Revenue" ColumnName="Revenue" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="ID_Staff" ColumnName="ID_Staff" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reserve">
+      <EntityTypeMapping TypeName="MetallurgiaModel.Reserve">
+        <MappingFragment StoreEntitySet="Reserve">
+          <ScalarProperty Name="ID_Reserve" ColumnName="ID_Reserve" />
+          <ScalarProperty Name="ID_Minerals" ColumnName="ID_Minerals" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SocialProgram">
+      <EntityTypeMapping TypeName="MetallurgiaModel.SocialProgram">
+        <MappingFragment StoreEntitySet="SocialProgram">
+          <ScalarProperty Name="ID_SocialProgram" ColumnName="ID_SocialProgram" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID_Staff" ColumnName="ID_Staff" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Staff">
+      <EntityTypeMapping TypeName="MetallurgiaModel.Staff">
+        <MappingFragment StoreEntitySet="Staff">
+          <ScalarProperty Name="ID_Staff" ColumnName="ID_Staff" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
+          <ScalarProperty Name="Born" ColumnName="Born" />
+          <ScalarProperty Name="ID_Post" ColumnName="ID_Post" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="MetallurgiaModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypesOfContracts">
+      <EntityTypeMapping TypeName="MetallurgiaModel.TypesOfContracts">
+        <MappingFragment StoreEntitySet="TypesOfContracts">
+          <ScalarProperty Name="ID_TypesOfContracts" ColumnName="ID_TypesOfContracts" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

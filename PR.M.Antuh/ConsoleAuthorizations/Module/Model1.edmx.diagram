@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="733adb14aa774f6c8424bd864361efe8" Name="Diagram1" ZoomLevel="92">
+        <EntityTypeShape EntityType="MetallurgiaModel.Authorizations" Width="1.5" PointX="5.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetallurgiaModel.Company" Width="1.5" PointX="7.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetallurgiaModel.Contract" Width="1.5" PointX="10" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetallurgiaModel.Export" Width="1.5" PointX="12.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetallurgiaModel.ExportMinerals" Width="1.5" PointX="12.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetallurgiaModel.Minerals" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetallurgiaModel.Post" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetallurgiaModel.Provider" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetallurgiaModel.PurschasedEquip" Width="1.5" PointX="5.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetallurgiaModel.Report" Width="1.5" PointX="8.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetallurgiaModel.Reserve" Width="1.5" PointX="8.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetallurgiaModel.SocialProgram" Width="1.5" PointX="5.25" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetallurgiaModel.Staff" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetallurgiaModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetallurgiaModel.TypesOfContracts" Width="1.5" PointX="7.75" PointY="14.875" IsExpanded="true" />
+        <AssociationConnector Association="MetallurgiaModel.FK_Authorizations_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="MetallurgiaModel.FK_Contract_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="MetallurgiaModel.FK_Contract_TypesOfContracts" ManuallyRouted="false" />
+        <AssociationConnector Association="MetallurgiaModel.FK_Export_Contract" ManuallyRouted="false" />
+        <AssociationConnector Association="MetallurgiaModel.FK_ExportMinerals_Contract" ManuallyRouted="false" />
+        <AssociationConnector Association="MetallurgiaModel.FK_Export_Minerals" ManuallyRouted="false" />
+        <AssociationConnector Association="MetallurgiaModel.FK_ExportMinerals_Minerals" ManuallyRouted="false" />
+        <AssociationConnector Association="MetallurgiaModel.FK_Report_Minerals" ManuallyRouted="false" />
+        <AssociationConnector Association="MetallurgiaModel.FK_Reserve_Minerals" ManuallyRouted="false" />
+        <AssociationConnector Association="MetallurgiaModel.FK_Staff_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="MetallurgiaModel.FK_PurschasedEquip_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MetallurgiaModel.FK_PurschasedEquip_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="MetallurgiaModel.FK_Report_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="MetallurgiaModel.FK_SocialProgram_Staff1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

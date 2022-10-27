@@ -1,0 +1,17 @@
+G:\PR.M.Antuh\PR.M.Antuh\bin\Debug\PR.M.Antuh.exe.config
+G:\PR.M.Antuh\PR.M.Antuh\bin\Debug\PR.M.Antuh.exe
+G:\PR.M.Antuh\PR.M.Antuh\bin\Debug\PR.M.Antuh.pdb
+G:\PR.M.Antuh\PR.M.Antuh\obj\Debug\PR.M.Antuh.csproj.AssemblyReference.cache
+G:\PR.M.Antuh\PR.M.Antuh\obj\Debug\MainWindow.g.cs
+G:\PR.M.Antuh\PR.M.Antuh\obj\Debug\App.g.cs
+G:\PR.M.Antuh\PR.M.Antuh\obj\Debug\PR.M.Antuh_MarkupCompile.cache
+G:\PR.M.Antuh\PR.M.Antuh\obj\Debug\PR.M.Antuh_MarkupCompile.lref
+G:\PR.M.Antuh\PR.M.Antuh\obj\Debug\MainWindow.baml
+G:\PR.M.Antuh\PR.M.Antuh\obj\Debug\PR.M.Antuh.g.resources
+G:\PR.M.Antuh\PR.M.Antuh\obj\Debug\PR.M.Antuh.Properties.Resources.resources
+G:\PR.M.Antuh\PR.M.Antuh\obj\Debug\PR.M.Antuh.csproj.GenerateResource.cache
+G:\PR.M.Antuh\PR.M.Antuh\obj\Debug\PR.M.Antuh.csproj.CoreCompileInputs.cache
+G:\PR.M.Antuh\PR.M.Antuh\obj\Debug\PR.M.Antuh.exe
+G:\PR.M.Antuh\PR.M.Antuh\obj\Debug\PR.M.Antuh.pdb
+G:\PR.M.Antuh\PR.M.Antuh\obj\Debug\Window1.g.cs
+G:\PR.M.Antuh\PR.M.Antuh\obj\Debug\Window1.baml
