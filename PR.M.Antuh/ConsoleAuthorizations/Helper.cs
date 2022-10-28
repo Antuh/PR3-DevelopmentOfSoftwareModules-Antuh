@@ -18,21 +18,21 @@ namespace ConsoleAuthorizations
             return s_entities;
         }
 
-        public void CreateEmployees(Module.Staff staff, Module.Authorizations authorizations)
+        public static void CreateEmployees(Module.Staff staff, Module.Authorizations authorizations)
         {
             s_entities.Staff.Add(staff);
             s_entities.Authorizations.Add(authorizations);
             s_entities.SaveChanges();
         }
 
-        public int GetLastIDStaff()
+        public static int GetLastIDStaff()
         {
             int id = s_entities.Staff.OrderByDescending(staff => staff.ID_Staff).First().ID_Staff;
 
             return id + 1;
         }
 
-        public int GetLastIDAuth()
+        public static int GetLastIDAuth()
         {
             int id = s_entities.Authorizations.OrderByDescending(authorizations => authorizations.ID_Authorization).First().ID_Authorization;
             return id + 1;

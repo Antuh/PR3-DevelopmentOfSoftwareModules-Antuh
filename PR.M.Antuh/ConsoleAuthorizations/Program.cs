@@ -47,12 +47,12 @@ namespace ConsoleAuthorizations
                 HashPassword hash = new HashPassword();
                 Console.WriteLine($"Хешированный пароль пользователя: {hash.HashPassw(password)}");
                 hash.HashPassw(password);
-                int staff = ms.GetLastIDStaff();
-                int authid = ms.GetLastIDAuth();
+                int staff = Helper.GetLastIDStaff();
+                int authid = Helper.GetLastIDAuth();
                 
-                Staff staffs = new Staff { ID_Staff = staff , Name = name, Surname = surname, Patronymic = patronymic };
+                Staff staffs = new Staff { ID_Staff = staff, Name = name, Surname = surname, Patronymic = patronymic };
                 Authorizations authorization = new Authorizations { ID_Authorization = authid, Login = login, Password = hash.HashPassw(password) };
-                ms.CreateEmployees(staff, authorization);
+                Helper.CreateEmployees(staffs, authorization);
                 Console.WriteLine("Учетная запись добавлена");
                 Console.ReadLine();
             }
